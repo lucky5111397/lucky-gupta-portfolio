@@ -2,7 +2,6 @@ import { useRef } from "react";
 import { motion } from "framer-motion";
 import { Link as ScrollLink } from "react-scroll";
 import { FiArrowRight, FiDownload } from "react-icons/fi";
-import { FiChevronDown } from "react-icons/fi";
 import TraceNetwork from "../components/TraceNetwork";
 import useMousePosition from "../hooks/useMousePosition";
 
@@ -79,16 +78,16 @@ export default function Hero() {
           variants={item}
           className="mt-6 flex flex-wrap gap-3 font-mono-ui text-sm md:text-base text-text-dim"
         >
-          <span className="px-3 py-1.5 rounded-full glass">Java Backend Developer</span>
-          <span className="px-3 py-1.5 rounded-full glass">AI Full Stack Developer</span>
+          <span className="px-3 py-1.5 rounded-full glass">Full-Stack MERN Developer</span>
+          <span className="px-3 py-1.5 rounded-full glass">Generative AI &amp; Agentic Systems</span>
         </motion.div>
 
         <motion.p
           variants={item}
           className="mt-8 max-w-xl text-lg md:text-xl text-text-dim leading-relaxed"
         >
-          I build intelligent, scalable, and user-focused web applications powered
-          by AI and modern backend technologies.
+          I build scalable full-stack web applications, multi-agent AI systems,
+          and intelligent products powered by modern backend architectures.
         </motion.p>
 
         <motion.div variants={item} className="mt-10 flex flex-wrap gap-4">
@@ -109,22 +108,6 @@ export default function Hero() {
           >
             <FiDownload /> Download Resume
           </a>
-        </motion.div>
-      </motion.div>
-
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.4, duration: 0.6 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-text-faint"
-      >
-        <span className="font-mono-ui text-xs tracking-widest">SCROLL</span>
-        <motion.div
-          animate={{ y: [0, 6, 0] }}
-          transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }}
-        >
-          <FiChevronDown size={18} />
         </motion.div>
       </motion.div>
     </section>

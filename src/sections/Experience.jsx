@@ -7,9 +7,8 @@ export default function Experience() {
     <section id="experience" className="relative py-24 md:py-32 px-6 md:px-10 bg-surface/30">
       <div className="max-w-4xl mx-auto">
         <SectionHeader
-          route="/experience"
-          title="Experience"
-          subtitle="My journey building real-world software, one commit at a time."
+          title="Experience &amp; Training"
+          subtitle="Hands-on technical training, feature development, and engineering exposure."
         />
 
         <div className="relative pl-10 md:pl-14">
@@ -36,19 +35,20 @@ export default function Experience() {
 
               <div className="glass rounded-2xl p-6 md:p-7 hover:border-white/20 transition-colors">
                 <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
-                  <span className="font-mono-ui text-xs text-cyan-400">{exp.route}</span>
-                  <span className="font-mono-ui text-xs px-3 py-1 rounded-full bg-white/5 border border-white/10 text-text-dim">
-                    {exp.period}
-                  </span>
+                  <span className="font-mono-ui text-xs text-cyan-400 font-medium">{exp.org}</span>
+                  {exp.period && (
+                    <span className="font-mono-ui text-xs px-3 py-1 rounded-full bg-white/5 border border-white/10 text-text-dim">
+                      {exp.period}
+                    </span>
+                  )}
                 </div>
-                <h3 className="font-display text-xl md:text-2xl font-semibold mb-1">
+                <h3 className="font-display text-xl md:text-2xl font-semibold mb-3">
                   {exp.role}
                 </h3>
-                <p className="text-text-dim text-sm mb-4">{exp.org}</p>
-                <ul className="space-y-2">
+                <ul className="space-y-2.5">
                   {exp.points.map((point) => (
                     <li key={point} className="flex gap-3 text-sm text-text-dim leading-relaxed">
-                      <span className="text-cyan-400 mt-1.5 w-1 h-1 rounded-full bg-cyan-400 shrink-0" />
+                      <span className="text-cyan-400 mt-1.5 w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0" />
                       {point}
                     </li>
                   ))}

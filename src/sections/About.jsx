@@ -6,24 +6,24 @@ import { stats } from "../data/portfolioData";
 
 const focusAreas = [
   {
-    icon: FiCode,
-    title: "Java Backend Development",
-    desc: "Designing robust, well-structured backend services with Java and Spring Boot.",
+    icon: FiLayers,
+    title: "Full-Stack Development",
+    desc: "Building responsive, production-ready web applications using the MERN stack with clean component design and state management.",
   },
   {
     icon: FiCpu,
-    title: "Artificial Intelligence",
-    desc: "Integrating AI models into real products to solve genuine user problems.",
+    title: "Generative AI & LLM Applications",
+    desc: "Developing intelligent solutions with RAG pipelines, Qdrant vector search, document intelligence, and multi-provider LLM integrations.",
   },
   {
-    icon: FiLayers,
-    title: "Full Stack Development",
-    desc: "Building cohesive experiences end-to-end, from database to interface.",
+    icon: FiCode,
+    title: "Multi-Agent Systems",
+    desc: "Architecting collaborative multi-agent workflows with LangChain StateGraph, specialized tool calling, and persistent Redis sessions.",
   },
   {
     icon: FiTarget,
-    title: "Clean Architecture & Problem Solving",
-    desc: "Writing maintainable code and breaking down complex problems methodically.",
+    title: "Backend Architecture & Problem Solving",
+    desc: "Designing secure RESTful APIs, JWT authentication, credit-based usage systems, and seamless Razorpay payment flows.",
   },
 ];
 
@@ -34,7 +34,7 @@ export default function About() {
         <SectionHeader
           route="/about"
           title="About Me"
-          subtitle="A Computer Science Engineering student building at the intersection of backend engineering and applied AI."
+          subtitle="A Computer Science Engineering student building at the intersection of full-stack engineering, multi-agent architectures, and Generative AI."
         />
 
         <div className="grid md:grid-cols-2 gap-6 mb-16">

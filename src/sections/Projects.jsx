@@ -7,7 +7,6 @@ export default function Projects() {
     <section id="projects" className="relative py-24 md:py-32 px-6 md:px-10">
       <div className="max-w-6xl mx-auto">
         <SectionHeader
-          route="/projects"
           title="Featured Projects"
           subtitle="A selection of applications I've designed and built, from AI-powered platforms to backend services."
         />

@@ -7,6 +7,8 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaJs,
+  FaRobot,
+  FaBrain,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -16,9 +18,13 @@ import {
   SiMysql,
   SiFirebase,
   SiPostman,
-  SiRender,
+  SiRedis,
+  SiDocker,
+  SiLangchain,
+  SiGooglegemini,
+  SiQdrant,
 } from "react-icons/si";
-import { FiCode } from "react-icons/fi";
+import { FiServer, FiZap, FiDatabase } from "react-icons/fi";
 
 export const navLinks = [
   { label: "Home", to: "home" },
@@ -31,8 +37,8 @@ export const navLinks = [
 ];
 
 export const stats = [
-  { label: "Projects Completed", value: 12, suffix: "+" },
-  { label: "GitHub Repositories", value: 25, suffix: "+" },
+  { label: "Projects Completed", value: 5, suffix: "+" },
+  { label: "GitHub Repositories", value: 7, suffix: "+" },
   { label: "LeetCode Problems", value: 150, suffix: "+" },
   { label: "Technologies Learned", value: 18, suffix: "+" },
 ];
@@ -40,161 +46,165 @@ export const stats = [
 export const skillGroups = [
   {
     title: "Frontend",
-    route: "/frontend",
     skills: [
-      { name: "React", icon: FaReact, level: 85 },
-      { name: "JavaScript", icon: FaJs, level: 88 },
-      { name: "Tailwind CSS", icon: SiTailwindcss, level: 90 },
-      { name: "HTML", icon: FaHtml5, level: 95 },
-      { name: "CSS", icon: FaCss3Alt, level: 90 },
+      { name: "React", icon: FaReact },
+      { name: "JavaScript", icon: FaJs },
+      { name: "Tailwind CSS", icon: SiTailwindcss },
+      { name: "HTML", icon: FaHtml5 },
+      { name: "CSS", icon: FaCss3Alt },
     ],
   },
   {
     title: "Backend",
-    route: "/backend",
     skills: [
-      { name: "Java", icon: FaJava, level: 90 },
-      { name: "Spring Boot", icon: SiSpringboot, level: 82 },
-      { name: "Node.js", icon: FaNodeJs, level: 78 },
-      { name: "Express", icon: SiExpress, level: 76 },
+      { name: "Node.js", icon: FaNodeJs },
+      { name: "Express.js", icon: SiExpress },
+      { name: "Java", icon: FaJava },
+      { name: "Spring Boot", icon: SiSpringboot },
+      { name: "REST APIs", icon: FiServer },
     ],
   },
   {
-    title: "Database",
-    route: "/database",
+    title: "Databases & Storage",
     skills: [
-      { name: "MongoDB", icon: SiMongodb, level: 80 },
-      { name: "MySQL", icon: SiMysql, level: 85 },
-      { name: "Firebase", icon: SiFirebase, level: 75 },
+      { name: "MongoDB", icon: SiMongodb },
+      { name: "MySQL", icon: SiMysql },
+      { name: "Firebase", icon: SiFirebase },
+      { name: "Redis", icon: SiRedis },
+      { name: "Qdrant", icon: SiQdrant },
     ],
   },
   {
-    title: "Tools",
-    route: "/tools",
+    title: "AI & GenAI",
     skills: [
-      { name: "Git", icon: FaGitAlt, level: 88 },
-      { name: "GitHub", icon: FaGithub, level: 88 },
-      { name: "Postman", icon: SiPostman, level: 85 },
-      { name: "VS Code", icon: FiCode, level: 92 },
-      { name: "Render", icon: SiRender, level: 80 },
+      { name: "Generative AI", icon: FaBrain },
+      { name: "LLM APIs", icon: FaRobot },
+      { name: "OpenRouter", icon: FaRobot },
+      { name: "LangChain", icon: SiLangchain },
+      { name: "Multi-Agent Systems", icon: FaBrain },
+      { name: "RAG & Vector Search", icon: FiDatabase },
+    ],
+  },
+  {
+    title: "Tools & Infrastructure",
+    skills: [
+      { name: "Git", icon: FaGitAlt },
+      { name: "GitHub", icon: FaGithub },
+      { name: "Postman", icon: SiPostman },
+      { name: "Docker", icon: SiDocker },
     ],
   },
 ];
 
 export const projects = [
   {
-    id: "intellivora",
-    name: "INTELLIVORA",
-    tagline: "AI-powered interview preparation platform",
+    id: "omnix",
+    name: "OMNIX",
+    tagline: "Multi-agent AI platform for intelligent productivity",
     description:
-      "A full-stack platform that helps candidates prepare for technical interviews using AI. Includes resume analysis, live AI-driven mock interviews with real-time feedback, downloadable PDF performance reports, and a complete history of past sessions — all secured with authentication and integrated Razorpay payments for premium access.",
+      "A full-stack Generative AI platform that brings conversational AI, coding assistance, web search, PDF and PowerPoint intelligence, vision analysis, and AI-powered artifact generation into a unified interface. Built with a modular multi-agent architecture using LangChain StateGraph, microservices, RAG with Qdrant, multiple LLM providers, Redis sessions, MongoDB persistence, and credit-based usage management.",
     features: [
-      "Resume Analysis",
-      "AI Interview Simulation",
-      "AI Feedback",
-      "PDF Reports",
-      "Authentication",
-      "Razorpay Payments",
-      "Interview History",
+      "Multi-Agent AI Architecture",
+      "AI Coding Assistant",
+      "Web Search",
+      "PDF & PDF-RAG Analysis",
+      "PowerPoint Intelligence",
+      "Vision & Image Analysis",
+      "AI Artifact Generation",
+      "Credit-Based Usage System",
     ],
-    tech: ["React", "Node.js", "Express", "MongoDB", "OpenAI API", "Razorpay", "JWT"],
+    tech: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Redis",
+      "LangChain",
+      "Gemini",
+      "Groq",
+      "OpenRouter",
+      "Qdrant",
+      "Docker",
+    ],
     liveDemo: "#",
     github: "#",
     featured: true,
     status: "In Production",
   },
   {
-    id: "placeholder-1",
-    name: "Project Name",
-    tagline: "Short one-line description goes here",
+    id: "intellivora",
+    name: "INTELLIVORA",
+    tagline: "AI-powered technical interview preparation platform",
     description:
-      "Add a short paragraph describing the problem this project solves, the approach taken, and the outcome or impact.",
-    features: ["Feature One", "Feature Two", "Feature Three"],
-    tech: ["Java", "Spring Boot", "MySQL"],
+      "A full-stack AI interview simulator that helps candidates prepare for technical interviews using their resumes, personalized question generation, AI-powered answer evaluation, and detailed performance reports. The platform combines PDF processing, secure authentication, interview history, credit-based usage, and Razorpay payments into a complete interview preparation workflow.",
+    features: [
+      "AI Resume Analysis",
+      "Personalized Interview Questions",
+      "AI Answer Evaluation",
+      "Performance Reports",
+      "Interview History",
+      "Secure Authentication",
+      "Credit-Based Usage",
+      "Razorpay Payments",
+    ],
+    tech: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "OpenRouter",
+      "JWT",
+      "Multer",
+      "PDF.js",
+      "Razorpay",
+    ],
     liveDemo: "#",
     github: "#",
     featured: false,
-    status: "Coming Soon",
-  },
-  {
-    id: "placeholder-2",
-    name: "Project Name",
-    tagline: "Short one-line description goes here",
-    description:
-      "Add a short paragraph describing the problem this project solves, the approach taken, and the outcome or impact.",
-    features: ["Feature One", "Feature Two", "Feature Three"],
-    tech: ["React", "Firebase"],
-    liveDemo: "#",
-    github: "#",
-    featured: false,
-    status: "Coming Soon",
-  },
-  {
-    id: "placeholder-3",
-    name: "Project Name",
-    tagline: "Short one-line description goes here",
-    description:
-      "Add a short paragraph describing the problem this project solves, the approach taken, and the outcome or impact.",
-    features: ["Feature One", "Feature Two", "Feature Three"],
-    tech: ["Node.js", "MongoDB", "Express"],
-    liveDemo: "#",
-    github: "#",
-    featured: false,
-    status: "Coming Soon",
+    status: "In Production",
   },
 ];
 
 export const experience = [
   {
-    role: "Aspiring Java Backend Developer",
-    org: "Open to Opportunities",
-    period: "2026 — Present",
-    route: "/experience/current",
+    role: "Generative AI Training",
+    org: "EiSystems Technologies",
+    period: "Hands-on Training",
     points: [
-      "Actively building production-grade backend systems with Java and Spring Boot.",
-      "Exploring AI integration patterns for full-stack applications.",
-      "Seeking backend / full-stack roles at product-based companies.",
-    ],
-  },
-  {
-    role: "Personal & Academic Projects",
-    org: "Self-Directed",
-    period: "2024 — 2026",
-    route: "/experience/projects",
-    points: [
-      "Designed and shipped full-stack applications end-to-end, from schema to deployment.",
-      "Practiced clean architecture and RESTful API design principles.",
-      "Solved 150+ data structures and algorithms problems on LeetCode.",
+      "Developed responsive web application features using React.js, Node.js, Express.js, and MongoDB.",
+      "Built and integrated REST APIs for seamless communication between frontend and backend.",
+      "Collaborated on application testing, debugging, and feature implementation.",
+      "Gained practical exposure to Generative AI concepts and their integration into web applications.",
     ],
   },
 ];
 
 export const education = [
   {
-    degree: "B.Tech in Computer Science Engineering",
-    institute: "Your Institute Name",
-    period: "2022 — 2026",
-    route: "/education/btech",
-    detail: "Focused on Data Structures, Algorithms, DBMS, Operating Systems, and Software Engineering.",
-  },
-  {
-    degree: "Higher Secondary (XII)",
-    institute: "Your School Name",
-    period: "2021 — 2022",
-    route: "/education/xii",
-    detail: "Science stream with Computer Science.",
+    degree: "Bachelor of Technology (B.Tech) – Computer Science & Engineering",
+    institute: "School of Management Sciences, Lucknow",
+    period: "Expected Graduation: 2027",
+    detail: "Focused on core Computer Science and Engineering principles, software development, and modern technologies.",
   },
 ];
 
 export const certifications = [
-  { title: "Java Programming", issuer: "Certification Body", year: "2025" },
-  { title: "Spring Boot Fundamentals", issuer: "Certification Body", year: "2025" },
-  { title: "Full Stack Web Development", issuer: "Certification Body", year: "2025" },
-  { title: "Data Structures & Algorithms", issuer: "Certification Body", year: "2024" },
+  {
+    title: "Winner – Cyber Security Quiz",
+    issuer: "Datapro Computers Pvt. Ltd.",
+  },
+  {
+    title: "Certificate of Excellence – Java Programming Quiz",
+    issuer: "PVPSIT (Unstop)",
+  },
+  {
+    title: "Generative AI Training",
+    issuer: "EiSystems Technologies",
+  },
 ];
 
 export const socials = {
-  github: "https://github.com/",
-  linkedin: "https://linkedin.com/",
-  email: "mailto:lucky.gupta@example.com",
+  github: "https://github.com/lucky5111397",
+  linkedin: "",
+  email: "mailto:luckyncg@gmail.com",
 };

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import LoadingScreen from "./components/LoadingScreen";
 import CustomCursor from "./components/CustomCursor";
 import ScrollProgress from "./components/ScrollProgress";
@@ -17,11 +16,9 @@ import GitHubStats from "./sections/GitHubStats";
 import Contact from "./sections/Contact";
 
 function App() {
-  const [, setLoaded] = useState(false);
-
   return (
     <div className="relative bg-bg text-text-primary font-body min-h-screen">
-      <LoadingScreen onComplete={() => setLoaded(true)} />
+      <LoadingScreen />
       <CustomCursor />
       <ScrollProgress />
       <Navbar />

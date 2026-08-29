@@ -1,20 +1,11 @@
 import { motion } from "framer-motion";
 
-export default function SectionHeader({ route, title, subtitle, align = "center" }) {
+export default function SectionHeader({ title, subtitle, align = "center" }) {
   const alignment =
     align === "left" ? "items-start text-left" : "items-center text-center";
 
   return (
     <div className={`flex flex-col ${alignment} mb-12 md:mb-16`}>
-      <motion.span
-        initial={{ opacity: 0, y: 10 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.8 }}
-        transition={{ duration: 0.5 }}
-        className="route-tag mb-4"
-      >
-        GET {route} <span className="text-text-faint">— 200 OK</span>
-      </motion.span>
       <motion.h2
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
