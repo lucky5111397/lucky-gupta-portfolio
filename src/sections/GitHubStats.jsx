@@ -47,7 +47,7 @@ export default function GitHubStats() {
     {
       icon: FiGitBranch,
       label: "Public Repositories",
-      value: "7",
+      value: githubUser ? String(githubUser.public_repos) : "—",
     },
     {
       icon: FiTerminal,
@@ -125,8 +125,9 @@ export default function GitHubStats() {
                 <div className="flex items-start gap-2.5 text-sm text-text-dim">
                   <FiCheck className="text-online shrink-0 mt-0.5" size={16} />
                   <span>
-                    Flagship codebases for <strong>OMNIX</strong> (Multi-Agent AI Platform) and{" "}
-                    <strong>INTELLIVORA</strong> (AI Interview Simulator).
+                    Flagship codebases for <strong>OPTIMUS</strong> (Autonomous Software Engineering Platform),{" "}
+                    <strong>OMNIX</strong> (Multi-Agent AI Platform), and{" "}
+                    <strong>INTELLIVORA</strong> (AI Interview / Aptitude Platform).
                   </span>
                 </div>
                 <div className="flex items-start gap-2.5 text-sm text-text-dim">

@@ -20,7 +20,7 @@ export default function ProjectCard({ project, index }) {
         <div className="flex items-start justify-between mb-4 flex-wrap gap-3">
           <div>
             <span className="route-tag mb-2">
-              {project.featured ? "PROD" : "DEV"} —{" "}
+              PROJECT —{" "}
               <span className="text-text-faint">{project.status}</span>
             </span>
             <h3 className="font-display text-2xl md:text-3xl font-bold tracking-tight mt-2">
@@ -57,22 +57,26 @@ export default function ProjectCard({ project, index }) {
         </div>
 
         <div className="flex flex-wrap gap-3">
-          <a
-            href={project.liveDemo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-brand text-white text-sm font-medium hover:opacity-90 transition-opacity"
-          >
-            <FiExternalLink size={15} /> Live Demo
-          </a>
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-5 py-2.5 rounded-full glass text-sm font-medium hover:border-white/25 transition-colors"
-          >
-            <FiGithub size={15} /> GitHub
-          </a>
+          {project.liveDemo && project.liveDemo !== "#" && (
+            <a
+              href={project.liveDemo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-brand text-white text-sm font-medium hover:opacity-90 transition-opacity"
+            >
+              <FiExternalLink size={15} /> Live Demo
+            </a>
+          )}
+          {project.github && project.github !== "#" && (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-5 py-2.5 rounded-full glass text-sm font-medium hover:border-white/25 transition-colors"
+            >
+              <FiGithub size={15} /> GitHub
+            </a>
+          )}
         </div>
       </div>
     </motion.div>
