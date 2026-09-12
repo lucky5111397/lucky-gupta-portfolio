@@ -98,6 +98,34 @@ export const skillGroups = [
 
 export const projects = [
   {
+    id: "optimus",
+    name: "OPTIMUS",
+    tagline: "Autonomous software engineering platform",
+    description:
+      "OPTIMUS is an autonomous software engineering platform that analyzes repositories, understands codebases, plans and executes development tasks, validates changes, reviews results, and delivers changes through GitHub. Agentic execution runs inside an isolated Docker worker sandbox designed to safely execute untrusted repository workloads.",
+    features: [
+      "Repository analysis and codebase intelligence",
+      "AI-assisted task planning and approval workflow",
+      "Isolated Docker worker sandbox for agentic execution",
+      "Validation and automated evaluation workflows",
+      "Code review and execution-state tracking",
+      "GitHub-based delivery and pull request workflow",
+    ],
+    tech: [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Docker",
+      "AI Agents",
+      "GitHub API",
+      "Sandboxing",
+    ],
+    liveDemo: "#",
+    github: "https://github.com/lucky5111397/OPTIMUS",
+    featured: true,
+    status: "Production Ready",
+  },
+  {
     id: "omnix",
     name: "OMNIX",
     tagline: "Multi-agent AI platform for intelligent productivity",
