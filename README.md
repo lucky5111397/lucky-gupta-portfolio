@@ -24,7 +24,7 @@ npm run preview    # preview the production build locally
 
 ## Before you deploy — personalize these
 
-1. **Resume**: replace `public/resume/Lucky_Gupta_Resume.pdf` with your real resume (same filename, or update the path in `src/components/Navbar.jsx` and `src/sections/Hero.jsx`).
+1. **Resume**: replace `public/resume/LuckyGuptaRes.pdf` with your real resume (same filename, or update the path in `src/components/Navbar.jsx` and `src/sections/Hero.jsx`).
 2. **Content**: all copy, skills, projects, experience, education, and certifications live in `src/data/portfolioData.js` — edit this one file to update most of the site.
 3. **Social links**: update `socials` (GitHub, LinkedIn, email) at the bottom of `src/data/portfolioData.js`.
 4. **Projects**: the `projects` array has 1 real project (INTELLIVORA) and 3 placeholders — replace the placeholder entries with your own projects, or delete them.

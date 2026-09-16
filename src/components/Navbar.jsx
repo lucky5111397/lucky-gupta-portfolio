@@ -74,7 +74,7 @@ export default function Navbar() {
 
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="/resume/Lucky_Gupta_Resume.pdf"
+              href="/resume/LuckyGuptaRes.pdf"
               download
               className="flex items-center gap-2 font-mono-ui text-sm px-4 py-2 rounded-full bg-gradient-brand text-white hover:opacity-90 transition-opacity shadow-glow"
             >
@@ -126,7 +126,7 @@ export default function Navbar() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.05 * navLinks.length }}
-              href="/resume/Lucky_Gupta_Resume.pdf"
+              href="/resume/LuckyGuptaRes.pdf"
               download
               className="mt-6 flex items-center gap-2 font-mono-ui text-sm px-6 py-3 rounded-full bg-gradient-brand text-white"
             >

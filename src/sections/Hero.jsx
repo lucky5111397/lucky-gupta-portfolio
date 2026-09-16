@@ -102,7 +102,7 @@ export default function Hero() {
             <FiArrowRight className="group-hover:translate-x-1 transition-transform" />
           </ScrollLink>
           <a
-            href="/resume/Lucky_Gupta_Resume.pdf"
+            href="/resume/LuckyGuptaRes.pdf"
             download
             className="flex items-center gap-2 px-7 py-3.5 rounded-full glass font-medium hover:border-white/20 transition-colors"
           >
